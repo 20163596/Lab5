@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+ 
+entity MK_LAB_5_IF is
+  port (
+--NUSTATOMI INPUTS IR OUTPUTS
+    A    : in  std_logic;
+	B    : in  std_logic;
+	C    : in  std_logic;
+    F  : out std_logic
+);
+end MK_LAB_5_IF;
+ 
+architecture rtl of MK_LAB_5_IF is
+begin
+		
+		process(A,B,C)
+		begin 
+		
+--VISI GALIMI ATVEJAI 2 AND IR 1 OR GATE`ams SU IF
+		
+if (A = '1' and not B = '1') or (not A='1' and not C='1') then F<='0';	
+elsif (A = '1' and not B = '1') or (not A='1' and not C='0') then F<='0';	
+elsif (A = '1' and not B = '0') or (not A='1' and not C='1') then F<='1';	
+elsif (A = '1' and not B = '0') or (not A='1' and not C='0') then F<='1';	
+elsif (A = '0' and not B = '1') or (not A='0' and not C='1') then F<='0';	
+elsif (A = '0' and not B = '1') or (not A='0' and not C='0') then F<='1';
+elsif (A = '0' and not B = '0') or (not A='0' and not C='1') then F<='0';	
+elsif (A = '0' and not B = '0') or (not A='0' and not C='0') then F<='1';
+	
+	else F <= '0';
+	end if;
+	
+	end process;
+end rtl;

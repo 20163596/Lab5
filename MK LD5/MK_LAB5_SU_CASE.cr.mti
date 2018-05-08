@@ -1,0 +1,17 @@
+{C:/Documents and Settings/Studentas/Desktop/MK LD5/MK_LAB_5_CASE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Documents and Settings/Studentas/Desktop/MK LD5/MK_LAB_5_CASE.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MK_LAB_5_CASE
+-- Compiling architecture rtl of MK_LAB_5_CASE
+
+} {} {}} {C:/Documents and Settings/Studentas/Desktop/MK LD5/process_SU_CASE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Documents and Settings/Studentas/Desktop/MK LD5/process_SU_CASE.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity process_tb
+-- Compiling architecture behave of process_tb
+
+} {} {}}
